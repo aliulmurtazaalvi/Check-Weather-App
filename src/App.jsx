@@ -49,7 +49,9 @@ export default function App() {
         ?
         <>
           <div className="bg-white/20 rounded-xl shadow-lg p-6 text-center flex-1 flex flex-col justify-center">
-            <h2 className="text-2xl font-bold mb-2">{wDetails.location.name}</h2>
+          <h2 className="text-2xl font-bold mb-2">
+            {wDetails.location.name}, {wDetails.location.region}, {wDetails.location.country}
+          </h2>
             <p className="text-lg text-gray-200 mb-4">{wDetails.location.localtime}</p>
             <div className="flex justify-center items-center gap-4">
               <span className="text-6xl font-extrabold">{wDetails.current.temperature}°C</span>
